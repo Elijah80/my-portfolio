@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Arvo|Dosis');
+
+:root {
+	--RichBlue: #0128ff;
+	--VioletBlue: #2b00bf;
+	--CobaltBlue: #0047ab;
+	--MidnightBlue: #0a0d40;
+	--PurpleBlue: #6519dd;
+	--MintGreen: #3eb489;
+	--Cyan: #46ffd3;
+	--LightMint: #b6ffbb;
+	--Charcoal: #1d1d1d;
+	--RedOrange: #ff3f34;
+	--Cream: #ffffe4;
+	--White: #fff;
+	--Black: #000;
+}
+
+/* initial reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Playfair Display', Arvo, Dosis, sans-serif;
+	font-size: 16px;
+	background-color: var(--Charcoal);
+	color: var(--Cream);
+}
