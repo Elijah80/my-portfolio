@@ -35,7 +35,7 @@ body {
 header {
 	display: grid;
 	grid-template-columns: 3em 1fr 1fr 3em;
-	grid-template-rows: 2em 1fr;
+	grid-template-rows: 2em 1fr 2em;
 }
 
 .header-logo {
@@ -65,13 +65,23 @@ header {
 	text-decoration: underline;
 }
 
+/* main section */
 .content {
 	display: grid;
-	grid-template-columns: 3em 1fr 3em;
-	grid-template-rows: 2em 1fr;
+	grid-template-columns: 10em 20em 1fr 20em;
+	grid-template-rows: 15em 1fr;
+}
+
+.side-bar {
+	grid-row: 2;
+	text-align: center;
+}
+
+.side-bar li {
+	margin-bottom: 4em;
 }
 
 .content .hero {
-	grid-column: 2;
+	grid-column: 3;
 	grid-row: 2;
 }
