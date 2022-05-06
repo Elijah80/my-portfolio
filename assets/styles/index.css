@@ -103,6 +103,10 @@ header {
 	color: var(--LightMint);
 }
 
+.hero p {
+	font-size: 110%;
+}
+
 #title,
 #description {
 	margin-bottom: 3em;
