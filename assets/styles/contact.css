@@ -1,0 +1,77 @@
+@import url('./index.css');
+
+.hero {
+	display: grid;
+	grid-template-rows: 5em 5em 1fr;
+}
+
+.hero p {
+	color: var(--BrightMint);
+	grid-row: 2;
+}
+
+form {
+	grid-row: 3;
+	display: grid;
+	grid-template-columns: 4em 1fr;
+	grid-gap: 3em;
+}
+
+label {
+	color: var(--MintGreen);
+	grid-column: 1;
+	align-self: center;
+}
+
+input,
+textarea {
+	grid-column: 2;
+	width: 30em;
+}
+
+#name,
+#email {
+	border-bottom: 1px solid var(--BrightMint);
+	border-top-style: hidden;
+	border-left-style: hidden;
+	border-right-style: hidden;
+	color: var(--BrightMint);
+	background-color: transparent;
+	padding-left: 0.5em;
+}
+
+#name:focus,
+#email:focus {
+	outline: none !important;
+	border-bottom: 1px solid var(--CobaltBlue);
+}
+
+textarea {
+	background-color: transparent;
+	border-color: var(--BrightMint);
+	color: var(--BrightMint);
+	border-radius: 5px;
+	padding: 0.5em;
+}
+
+textarea:focus {
+	outline: none !important;
+	border-color: var(--CobaltBlue);
+}
+
+::placeholder {
+	color: var(--CobaltBlue);
+	font-size: 125%;
+	letter-spacing: 0.2em;
+	text-shadow: 0 0 0.5px var(--Cream);
+}
+
+.submit-btn {
+	width: 20em;
+	border-radius: 5px;
+	border: 1px solid var(--BrightMint);
+	background-color: var(--BrightMint);
+	color: var(--Cream);
+	font-size: 125%;
+	text-shadow: 0 0 4px var(--Black);
+}
