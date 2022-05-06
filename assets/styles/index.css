@@ -63,6 +63,12 @@ header {
 	color: var(--Cyan);
 }
 
+.header-nav .resume-button {
+	border: 1px solid var(--Cyan);
+	border-radius: 4px;
+	padding: 0.3em;
+}
+
 .header-nav .active {
 	text-decoration: underline;
 }
