@@ -125,12 +125,20 @@ header {
 	color: var(--BrightMint);
 }
 
-.connect {
-	padding: 0.7em;
-	background: transparent;
-	border: 1px solid var(--Cyan);
+.cta {
+	padding: 0.7em 3em;
 	border-radius: 5px;
-	width: 20em;
-	color: var(--Cyan);
 	font-size: 110%;
+	text-decoration: none;
+	color: var(--Cream);
+	text-shadow: 0 0 3px var(--Black);
+}
+
+#connect {
+	background-color: var(--MintGreen);
+	margin-right: 2em;
+}
+
+#view-work {
+	background-color: var(--CobaltBlue);
 }

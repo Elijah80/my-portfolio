@@ -1,0 +1,27 @@
+@import url('./index.css');
+
+.hero {
+	display: grid;
+	grid-template-rows: 5em 1fr;
+}
+
+.project-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+
+.project {
+	padding-right: 2em;
+}
+
+.project img {
+	margin-bottom: 1em;
+}
+.project h3 {
+	margin-bottom: 1em;
+	color: var(--MintGreen);
+}
+.project p {
+	color: var(--BrightMint);
+}
