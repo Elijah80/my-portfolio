@@ -6,14 +6,16 @@
 	--CobaltBlue: #0047ab;
 	--MidnightBlue: #0a0d40;
 	--PurpleBlue: #6519dd;
-	--MintGreen: #3eb489;
-	--Cyan: #46ffd3;
+	--MintGreen: #3bba9c;
+	--BrightMint: #4fffb0;
 	--LightMint: #b6ffbb;
-	--Charcoal: #1d1d1d;
+	--Cyan: #46ffd3;
+	--Charcoal: #1b1b1b;
 	--RedOrange: #ff3f34;
 	--Cream: #ffffe4;
 	--White: #fff;
 	--Black: #000;
+	--LightGray: #cfcfcf;
 }
 
 /* initial reset */
@@ -58,7 +60,7 @@ header {
 
 .header-nav a {
 	text-decoration: none;
-	color: var(--Cream);
+	color: var(--Cyan);
 }
 
 .header-nav .active {
@@ -88,4 +90,36 @@ header {
 .content .hero {
 	grid-column: 3;
 	grid-row: 2;
+}
+
+.hero h1 {
+	color: var(--LightMint);
+}
+
+#title,
+#description {
+	margin-bottom: 3em;
+}
+
+#greeting {
+	color: var(--BrightMint);
+	margin-bottom: 1em;
+}
+
+#title {
+	color: var(--LightGray);
+}
+
+#description {
+	color: var(--BrightMint);
+}
+
+.connect {
+	padding: 0.7em;
+	background: transparent;
+	border: 1px solid var(--Cyan);
+	border-radius: 5px;
+	width: 20em;
+	color: var(--Cyan);
+	font-size: 110%;
 }
