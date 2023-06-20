@@ -1,0 +1,66 @@
+.card {
+  text-align: center;
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.card-header {
+  color: var(--Charcoal);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 150%;
+}
+
+.card-body {
+  background: var(--Charcoal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75%;
+  font-size: 200%;
+  font-weight: 400;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#html-card {
+  grid-row: 3;
+  border-color: var(--Orange);
+  box-shadow: 0 0 10px var(--Orange);
+}
+
+#html-card .card-header {
+  background: var(--Orange);
+}
+
+#css-card {
+  grid-row: 3;
+  grid-column: 3;
+  border-color: var(--CssBlue);
+  box-shadow: 0 0 10px var(--CssBlue);
+}
+
+#css-card .card-header {
+  background: var(--CssBlue);
+}
+
+#js-card {
+  grid-row: 5;
+  border-color: var(--JsYellow);
+  box-shadow: 0 0 10px var(--JsYellow);
+}
+
+#js-card .card-header {
+  background: var(--JsYellow);
+}
+
+#react-card {
+  grid-column: 3;
+  grid-row: 5;
+  border-color: var(--ReactBlue);
+  box-shadow: 0 0 10px var(--ReactBlue);
+}
+
+#react-card .card-header {
+  background: var(--ReactBlue);
+}

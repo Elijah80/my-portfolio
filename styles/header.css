@@ -1,0 +1,97 @@
+.intro-content {
+  grid-row: 2;
+}
+
+.greeting {
+  margin-bottom: 5px;
+}
+
+.name {
+  font-size: 100%;
+  margin-top: 25px;
+  text-decoration: underline;
+  text-decoration-color: var(--BrightMint);
+}
+
+.introduction {
+  font-size: 115%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 115%;
+}
+
+.btn-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-btn{
+  color: var(--BrightMint);
+  font-size: 125%;
+  padding: 10px 50px;
+  text-decoration: none;
+}
+
+.contact-btn:hover {
+  color: var(--Cream);
+  background-color: var(--MintGreen);
+  border-radius: 5px;
+}
+
+.profile-image {
+  justify-self: end;
+  border-radius: 5%;
+  box-shadow: 0 0 10px var(--White);
+  filter: grayscale(1);
+  grid-column: 2;
+  width: 75%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.external-links {
+  grid-row: 1;
+  grid-column: 2;
+  list-style: none;
+  text-align: right;
+}
+
+.link-item {
+  display: inline;
+  margin-left: 2rem;
+}
+
+.link-item a {
+  text-decoration: none;
+}
+
+.link-image {
+  width: 7%;
+  transition: all 0.3s ease-in-out;
+}
+
+.link-image:hover {
+  transform: scale(1.5);
+  z-index: 1;
+}
+
+#github-logo {
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--White);
+}
+
+#upwork-logo {
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--BrightMint);
+}
+
+#linkedin-logo {
+  border-radius: 30%;
+  box-shadow: 0 0 10px var(--Cyan);
+}
+
+#facebook-logo {
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--CobaltBlue);
+}
