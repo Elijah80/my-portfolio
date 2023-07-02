@@ -10,6 +10,7 @@
     <meta name="robots" content="index, follow">
     <link rel="icon" type="image/png" href="./assets/icons/favicon.ico">
     <link rel="stylesheet" type="text/css" href="./styles/index.css">
+    <script src="https://kit.fontawesome.com/cf279db74a.js" crossorigin="anonymous"></script>
     <title>Elijah Cravens || Frontend Developer</title>
   </head>
 
@@ -28,22 +29,17 @@
         <img class="profile-image" src="./assets/images/self.png" alt="Image of Elijah" />
         <ul class="external-links">
           <li class="link-item">
-            <a href="#">
+            <a href="https://github.com/Elijah80">
               <img src="./assets/icons/github-logo.png" alt="github logo" class="link-image" id="github-logo">
             </a>
           </li>
           <li class="link-item">
-            <a href="#">
+            <a href="https://www.upwork.com/freelancers/~01cf71e76e68d74c20">
               <img src="./assets/icons/upwork-logo.png" alt="upwork logo" class="link-image" id="upwork-logo">
             </a>
           </li>
           <li class="link-item">
-            <a href="#">
-              <img src="./assets/icons/linkedin-logo.png" alt="linkedin logo" class="link-image" id="linkedin-logo">
-            </a>
-          </li>
-          <li class="link-item">
-            <a href="#">
+            <a href="https://www.facebook.com/elijah.w.cravens/">
               <img src="./assets/icons/facebook-logo.png" alt="facebook logo" class="link-image" id="facebook-logo">
             </a>
           </li>
@@ -71,16 +67,70 @@
       </div>
       <div class="content-divider2">&nbsp;</div>
       <div class="project-content">
-        <p>
-          this is where a carousel of my projects will be showcased. i'm thinking these will be categorized by language
-          used.
-        </p>
+        <h1 class="project-header heading-md">Vanilla Javascript Projects</h1>
+        <div class="outer-carousel">
+          <div class="carousel-inner">
+            <!-- Inner Carousel 1 -->
+            <div class="inner-carousel">
+              <h1 class="carousel-title heading-md">Todo Project</h1>
+              <div class="carousel-images">
+                <!-- Images for Inner Carousel 1 -->
+                <img src="./assets/images/todo-app/start.PNG" alt="Todo Project Image 1">
+                <img src="./assets/images/todo-app/with-tasks.PNG" alt="Todo Project Image 2">
+                <img src="./assets/images/todo-app/completed-tasks.PNG" alt="Todo Project Image 3">
+                <img src="./assets/images/todo-app/before-task-edit.PNG" alt="Todo Project Image 4">
+                <img src="./assets/images/todo-app/edited-task.PNG" alt="Todo Project Image 5">
+                <img src="./assets/images/todo-app/filtered-completed.PNG" alt="Todo Project Image 6">
+                <img src="./assets/images/todo-app/filtered-incompleted.PNG" alt="Todo Project Image 7">
+              </div>
+              <div class="carousel-links">
+                <a href="https://elijah80.github.io/vanilla-todo/">View Site</a>
+                <a href="https://github.com/Elijah80/vanilla-todo">View Code</a>
+              </div>
+            </div>
+
+            <!-- Inner Carousel 2 -->
+            <div class="inner-carousel">
+              <h1 class="carousel-title heading-md">Project 2</h1>
+              <div class="carousel-images">
+                <!-- Images for Inner Carousel 2 -->
+                <img src="https://placehold.co/600x400.png" alt="Project 2 Image 1">
+                <img src="https://placehold.co/600x400.png" alt="Project 2 Image 2">
+                <img src="https://placehold.co/600x400.png" alt="Project 2 Image 3">
+              </div>
+              <div class="carousel-links">
+                <a href="project2-site">View Site</a>
+                <a href="project2-github">View Code</a>
+              </div>
+            </div>
+
+            <!-- Inner Carousel 3 -->
+            <div class="inner-carousel">
+              <h1 class="carousel-title heading-md">Project 3</h1>
+              <div class="carousel-images">
+                <!-- Images for Inner Carousel 3 -->
+                <img src="https://placehold.co/600x400.png" alt="Project 3 Image 1">
+                <img src="https://placehold.co/600x400.png" alt="Project 3 Image 2">
+                <img src="https://placehold.co/600x400.png" alt="Project 3 Image 3">
+              </div>
+              <div class="carousel-links">
+                <a href="project3-site">View Site</a>
+                <a href="project3-github">View Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-navigation">
+            <button class="prev-button"><i class="fa-solid fa-circle-left fa-2xl"></i></button>
+            <button class="next-button"><i class="fa-solid fa-circle-right fa-2xl"></i></button>
+          </div>
+        </div>
       </div>
       <div class="contact-form">
         contact form here
       </div>
     </div>
-    <script src="scripts.js"></script>
+    <script src="./js/scripts.js"></script>
   </body>
 
 </html>
