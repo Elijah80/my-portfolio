@@ -30,7 +30,7 @@ body {
 	grid-row: 2;
 	grid-column: 2;
 	display: grid;
-	grid-template-rows: 1fr 50px 3px 50px 450px 50px 3px 50px 600px 25px 200px;
+	grid-template-rows: 1fr 50px 3px 50px 450px 50px 3px 50px 700px 50px 3px 50px 600px;
 }
 
 .content-divider {
@@ -43,6 +43,13 @@ body {
 .content-divider2 {
 	grid-row: 7;
 	background: linear-gradient(to right, var(--VioletBlue), var(--LightMint), var(--CssBlue), var(--Cyan));
+	animation: gradient-animation 5s ease infinite;
+	background-size: 400% 400%;
+}
+
+.content-divider3 {
+	grid-row: 11;
+	background: linear-gradient(to left, var(--CssBlue), var(--CobaltBlue), var(--ReactBlue), var(--PurpleBlue));
 	animation: gradient-animation 5s ease infinite;
 	background-size: 400% 400%;
 }
@@ -66,5 +73,5 @@ body {
 }
 
 .contact-form {
-	grid-row: 11;
+	grid-row: 13;
 }
