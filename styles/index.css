@@ -22,8 +22,10 @@ body {
 }
 
 .ring-pattern {
-	margin-left: -250px;
-	margin-top: 50px;
+	grid-row: 1;
+	margin-left: -450px;
+	top: 50px;
+	position: absolute;
 }
 
 .content-container {
