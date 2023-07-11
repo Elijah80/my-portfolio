@@ -238,8 +238,8 @@ projectContent.appendChild(outerCarousel);
 const contactForm = createElement('div', {
   class: 'contact-form'
 });
-const contactHeader = createElement('h1', {
-  class: 'heading-lg'
+const contactHeader = createElement('div', {
+  class: 'heading-md'
 });
 contactHeader.textContent = 'Contact Me';
 const contactFormElement = createElement('form', {
@@ -248,41 +248,41 @@ const contactFormElement = createElement('form', {
 
 // Create form elements
 const nameLabel = createElement('label', {
-  for: 'name'
+  for: 'name',
+  id: 'name-lbl'
 });
 nameLabel.textContent = 'Name: ';
 const nameInput = createElement('input', {
   type: 'text',
   id: 'name',
-  name: 'name',
-  required: true
+  name: 'name'
 });
 
 const emailLabel = createElement('label', {
-  for: 'email'
+  for: 'email',
+  id: 'email-lbl'
 });
 emailLabel.textContent = 'Email: ';
 const emailInput = createElement('input', {
   type: 'email',
   id: 'email',
-  name: 'email',
-  required: true
+  name: 'email'
 });
 
 const messageLabel = createElement('label', {
-  for: 'message'
+  for: 'message',
+  id: 'msg-lbl'
 });
 messageLabel.textContent = 'Message: ';
 const messageTextArea = createElement('textarea', {
   id: 'message',
   name: 'message',
-  rows: '5',
-  required: true
+  rows: '5'
 });
 
 const submitInput = createElement('input', {
   type: 'submit',
-  class: 'submit-btn',
+  id: 'submit-btn',
   value: 'Contact'
 });
 
@@ -296,6 +296,38 @@ contactFormElement.appendChild(messageTextArea);
 contactFormElement.appendChild(submitInput);
 contactForm.appendChild(contactHeader);
 contactForm.appendChild(contactFormElement);
+
+// Form submission handling
+contactFormElement.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const name = nameInput.value.trim();
+  const email = emailInput.value.trim();
+  const message = messageTextArea.value.trim();
+
+  if (name === '' || email === '' || message === '') {
+    alert('Please fill in all the fields.');
+    return;
+  }
+
+  const formData = {
+    name: name,
+    email: email,
+    message: message,
+  };
+
+  // Send the form data to elijahcravens46@gmail.com
+  const emailService = 'mailto:elijahcravens46@gmail.com';
+  const encodedData = Object.entries(formData)
+    .map(([key, value]) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`)
+    .join('&');
+  const emailBody = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage: ${message}\n\n`);
+  const emailLink = `${emailService}?subject=Contact%20Form%20Submission&body=%0A%0A${emailBody}`;
+  window.open(emailLink, '_blank');
+
+  // Reset the form
+  contactFormElement.reset();
+});
 
 // Append all the elements to the container
 container.appendChild(ringPatternImage);

@@ -3,6 +3,7 @@
 @import url('./header.css');
 @import url('./experience.css');
 @import url('./project.css');
+@import url('./contact.css');
 
 * {
 	box-sizing: border-box;

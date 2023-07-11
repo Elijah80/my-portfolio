@@ -1,0 +1,60 @@
+#contact-form {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 10rem;
+  grid-template-rows: 2rem 3rem 2rem 3rem 5rem 3rem 3rem;
+  width: 600px;
+}
+
+#name-lbl, #name {
+  grid-row: 1;
+}
+
+#email-lbl, #email {
+  grid-row: 3;
+}
+
+#msg-lbl, #message {
+  grid-row: 5;
+}
+
+#name-lbl, #email-lbl,
+#msg-lbl {
+  color: var(--MintGreen);
+  font-size: 145%;
+  margin-right: 1rem;
+  text-align: right;
+}
+
+#name, #email, #message {
+  border-radius: 5px;
+  border: none;
+  background-color: var(--Cream);
+  padding: .5rem;
+}
+
+#name:focus, #email:focus,
+#message:focus {
+  outline-color: var(--PurpleBlue);
+  outline-offset: .2rem;
+}
+
+#submit-btn {
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  color: var(--MintGreen);
+  cursor: pointer;
+  font-size: 150%;
+  grid-column: 2;
+  grid-row: 7;
+  justify-self: center;
+  text-decoration: underline;
+  text-underline-position: under;
+  width: 12rem;
+}
+
+#submit-btn:hover {
+  background-color: var(--MintGreen);
+  color: var(--Cream);
+}
